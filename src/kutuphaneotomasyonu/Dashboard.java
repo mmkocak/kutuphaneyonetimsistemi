@@ -43,6 +43,11 @@ public class Dashboard extends javax.swing.JFrame {
         b1.setText("Mevcut Kitaplar");
 
         b2.setText("Kitap Ekle");
+        b2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b2ActionPerformed(evt);
+            }
+        });
 
         b3.setText("Kitap Sil");
 
@@ -105,6 +110,10 @@ public class Dashboard extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b2ActionPerformed
 
     /**
      * @param args the command line arguments
