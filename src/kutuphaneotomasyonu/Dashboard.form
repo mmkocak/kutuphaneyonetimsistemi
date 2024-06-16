@@ -95,6 +95,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Mevcut Kitaplar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="b2">
       <Properties>
