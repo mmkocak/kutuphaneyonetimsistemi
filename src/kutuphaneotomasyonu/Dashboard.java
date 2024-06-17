@@ -17,6 +17,7 @@ public class Dashboard extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         b1 = new javax.swing.JButton();
         b2 = new javax.swing.JButton();
@@ -25,91 +26,77 @@ public class Dashboard extends javax.swing.JFrame {
         b5 = new javax.swing.JButton();
         b6 = new javax.swing.JButton();
         b7 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kutuphaneotomasyonu/kutuphane2.jpg"))); // NOI18N
+        jLabel2.setText("jLabel2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(540, 540));
+        setPreferredSize(new java.awt.Dimension(700, 550));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 0, 0));
         jLabel1.setText("KONTROL PANELİ");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, 240, -1));
 
+        b1.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         b1.setText("Mevcut Kitaplar");
+        b1.setPreferredSize(new java.awt.Dimension(140, 27));
         b1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b1ActionPerformed(evt);
             }
         });
+        getContentPane().add(b1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 170, 30));
 
+        b2.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         b2.setText("Kitap Ekle");
+        b2.setPreferredSize(new java.awt.Dimension(140, 27));
         b2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b2ActionPerformed(evt);
             }
         });
+        getContentPane().add(b2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 170, 30));
 
+        b3.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         b3.setText("Kitap Sil");
+        b3.setPreferredSize(new java.awt.Dimension(140, 27));
+        getContentPane().add(b3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 320, 170, 30));
 
+        b4.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         b4.setText("Personel Detayları");
+        b4.setPreferredSize(new java.awt.Dimension(140, 27));
+        getContentPane().add(b4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 220, 170, 30));
 
+        b5.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         b5.setText("Personel Ekle");
+        b5.setPreferredSize(new java.awt.Dimension(140, 27));
+        getContentPane().add(b5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, 170, 30));
 
+        b6.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         b6.setText("Personel Sil");
+        b6.setPreferredSize(new java.awt.Dimension(140, 27));
+        getContentPane().add(b6, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 320, 170, 30));
 
+        b7.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         b7.setText("Yöneticiyi Düzenle");
+        b7.setPreferredSize(new java.awt.Dimension(140, 27));
+        getContentPane().add(b7, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 420, 170, 30));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(38, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(b1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(b2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(b3, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(78, 78, 78)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(b4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(b5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(b6, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(21, 21, 21))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(b7, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(114, 114, 114))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jLabel1)
-                .addGap(35, 35, 35)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(b1)
-                        .addGap(18, 18, 18)
-                        .addComponent(b2)
-                        .addGap(18, 18, 18)
-                        .addComponent(b3))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(b4)
-                        .addGap(18, 18, 18)
-                        .addComponent(b5)
-                        .addGap(18, 18, 18)
-                        .addComponent(b6)))
-                .addGap(37, 37, 37)
-                .addComponent(b7)
-                .addContainerGap(47, Short.MAX_VALUE))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kutuphaneotomasyonu/kutuphane2.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 540));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_b2ActionPerformed
+        kitap_Ekle ktekle = new kitap_Ekle();
+        ktekle.setVisible(true);
+        dispose();    }//GEN-LAST:event_b2ActionPerformed
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
         mevcutKitaplar mvkitap = new mevcutKitaplar();
@@ -161,5 +148,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JButton b6;
     private javax.swing.JButton b7;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
