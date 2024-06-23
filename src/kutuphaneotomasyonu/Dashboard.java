@@ -104,6 +104,11 @@ public class Dashboard extends javax.swing.JFrame {
         b7.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         b7.setText("Yöneticiyi Düzenle");
         b7.setPreferredSize(new java.awt.Dimension(140, 27));
+        b7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b7ActionPerformed(evt);
+            }
+        });
         getContentPane().add(b7, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 420, 170, 30));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kutuphaneotomasyonu/kutuphane2.jpg"))); // NOI18N
@@ -147,6 +152,12 @@ public class Dashboard extends javax.swing.JFrame {
         psil.setVisible(true);
         dispose();
     }//GEN-LAST:event_b6ActionPerformed
+
+    private void b7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b7ActionPerformed
+        Admin_duzenle aduzenle = new Admin_duzenle();
+        aduzenle.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_b7ActionPerformed
 
     /**
      * @param args the command line arguments
