@@ -45,6 +45,9 @@ public class mevcutKitaplar extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
+        fetch.setBackground(new java.awt.Color(102, 0, 0));
+        fetch.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        fetch.setForeground(new java.awt.Color(255, 255, 255));
         fetch.setText("GETİR");
         fetch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -52,6 +55,9 @@ public class mevcutKitaplar extends javax.swing.JFrame {
             }
         });
 
+        back.setBackground(new java.awt.Color(102, 0, 0));
+        back.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        back.setForeground(new java.awt.Color(255, 255, 255));
         back.setText("GERİ");
         back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

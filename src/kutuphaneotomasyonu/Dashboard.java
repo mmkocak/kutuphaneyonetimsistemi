@@ -79,6 +79,11 @@ public class Dashboard extends javax.swing.JFrame {
         b5.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         b5.setText("Personel Ekle");
         b5.setPreferredSize(new java.awt.Dimension(140, 27));
+        b5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(b5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, 170, 30));
 
         b6.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
@@ -114,6 +119,12 @@ public class Dashboard extends javax.swing.JFrame {
         pdetay.setVisible(true);
         dispose();
     }//GEN-LAST:event_b4ActionPerformed
+
+    private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
+        Personel_Ekle pekle = new Personel_Ekle();
+        pekle.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_b5ActionPerformed
 
     /**
      * @param args the command line arguments
