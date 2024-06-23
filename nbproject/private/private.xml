@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/New%20Folder%20(2)/kutuphaneotomasyonu/src/kutuphaneotomasyonu/mevcutKitaplar.java</file>
+            <file>file:/D:/New%20Folder%20(2)/kutuphaneotomasyonu/src/kutuphaneotomasyonu/kitap_Sil.java</file>
             <file>file:/D:/New%20Folder%20(2)/kutuphaneotomasyonu/src/kutuphaneotomasyonu/kitap_Ekle.java</file>
-            <file>file:/D:/New%20Folder%20(2)/kutuphaneotomasyonu/src/kutuphaneotomasyonu/Databasebglnt.java</file>
-            <file>file:/D:/New%20Folder%20(2)/kutuphaneotomasyonu/src/kutuphaneotomasyonu/GirisEkrani.java</file>
+            <file>file:/D:/New%20Folder%20(2)/kutuphaneotomasyonu/src/kutuphaneotomasyonu/personelSil.java</file>
+            <file>file:/D:/New%20Folder%20(2)/kutuphaneotomasyonu/src/kutuphaneotomasyonu/Personel_Ekle.java</file>
+            <file>file:/D:/New%20Folder%20(2)/kutuphaneotomasyonu/src/kutuphaneotomasyonu/Admin_duzenle.java</file>
             <file>file:/D:/New%20Folder%20(2)/kutuphaneotomasyonu/src/kutuphaneotomasyonu/Dashboard.java</file>
         </group>
     </open-files>
