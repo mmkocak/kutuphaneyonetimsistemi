@@ -3,15 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package kutuphaneotomasyonu;
+
 import java.sql.Connection;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import java.sql.PreparedStatement;
+public class personelSil extends javax.swing.JFrame {
 
-public class kitap_Sil extends javax.swing.JFrame {
-
-   
-    public kitap_Sil() {
+  
+    public personelSil() {
         initComponents();
     }
 
@@ -20,18 +20,11 @@ public class kitap_Sil extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         t1 = new javax.swing.JTextField();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-
-        jButton5.setBackground(new java.awt.Color(86, 228, 240));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(102, 0, 0));
-        jButton5.setText("Kopya");
-        jButton5.setPreferredSize(new java.awt.Dimension(120, 40));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -39,7 +32,7 @@ public class kitap_Sil extends javax.swing.JFrame {
         jButton6.setBackground(new java.awt.Color(86, 228, 240));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setForeground(new java.awt.Color(102, 0, 0));
-        jButton6.setText("Kitap ID veya Kitap Adını girin");
+        jButton6.setText("PersonelID veya Personel Adını girin");
         jButton6.setPreferredSize(new java.awt.Dimension(120, 40));
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, 580, -1));
         getContentPane().add(t1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, 570, 40));
@@ -80,30 +73,30 @@ public class kitap_Sil extends javax.swing.JFrame {
         Connection conn = null;
         PreparedStatement pstmt = null;
         String input =t1.getText();
-        String query = "DELETE FROM books WHERE book_id = ? OR name = ?";
+        String query = "DELETE FROM staffs WHERE staff_id = ? OR name = ?";
         try
         {
-          conn = Databasebglnt.getConnection();
-        pstmt = conn.prepareStatement(query);
-        pstmt.setString(1, input);
-        pstmt.setString(2, input);
-        int rows = pstmt.executeUpdate();
+            conn = Databasebglnt.getConnection();
+            pstmt = conn.prepareStatement(query);
+            pstmt.setString(1, input);
+            pstmt.setString(2, input);
+            int rows = pstmt.executeUpdate();
 
-        if (rows > 0) {
-            JOptionPane.showMessageDialog(this, "Kitap başarıyla silindi");
-        } else {
-            JOptionPane.showMessageDialog(this, "Böyle bir kitap mevcut değil");
-        }
-    } catch (SQLException e) {
-        JOptionPane.showMessageDialog(this, e.getMessage());
-    } finally {
-        try {
-            if (pstmt != null) pstmt.close();
-            if (conn != null) conn.close();
+            if (rows > 0) {
+                JOptionPane.showMessageDialog(this, "Personel başarıyla silindi");
+            } else {
+                JOptionPane.showMessageDialog(this, "Böyle bir Personel mevcut değil");
+            }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(this, e.getMessage());
+        } finally {
+            try {
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (SQLException e) {
+                JOptionPane.showMessageDialog(this, e.getMessage());
+            }
         }
-    }
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -129,26 +122,25 @@ public class kitap_Sil extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(kitap_Sil.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(personelSil.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(kitap_Sil.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(personelSil.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(kitap_Sil.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(personelSil.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(kitap_Sil.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(personelSil.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new kitap_Sil().setVisible(true);
+                new personelSil().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
